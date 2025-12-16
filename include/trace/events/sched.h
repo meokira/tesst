@@ -812,6 +812,7 @@ TRACE_EVENT(sched_cpufreq_fastpath,
 /*
  * Tracepoint for showing tracked migration information
  */
+/*
 TRACE_EVENT(sched_dynamic_threshold,
 
 	TP_PROTO(struct task_struct *tsk, unsigned int threshold,
@@ -865,6 +866,7 @@ TRACE_EVENT(sched_dynamic_threshold,
 		__entry->B_load_avg,
 		__entry->comm)
 	);
+*/
 
 TRACE_EVENT(sched_dynamic_threshold_draw,
 
@@ -891,6 +893,7 @@ TRACE_EVENT(sched_dynamic_threshold_draw,
 /*
  * Tracepoint for showing the result of hmp task runqueue selection
  */
+/*
 TRACE_EVENT(sched_hmp_select_task_rq,
 
 	TP_PROTO(struct task_struct *tsk, int step, int sd_flag, int prev_cpu,
@@ -944,6 +947,7 @@ TRACE_EVENT(sched_hmp_select_task_rq,
 		__entry->B_load_avg,
 		__entry->comm)
 	);
+*/
 
 /*
  * Tracepoint for dumping hmp cluster load ratio
@@ -975,6 +979,7 @@ TRACE_EVENT(sched_hmp_load,
 /*
  * Tracepoint for dumping hmp statistics
  */
+/*
 TRACE_EVENT(sched_hmp_stats,
 
 		TP_PROTO(struct hmp_statisic *hmp_stats),
@@ -995,7 +1000,7 @@ TRACE_EVENT(sched_hmp_stats,
 			__entry->nr_force_up,
 			__entry->nr_force_down)
 	   );
-
+ */
 /*
  * Tracepoint for cfs task enqueue event
  */
