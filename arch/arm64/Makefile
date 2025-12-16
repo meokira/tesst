@@ -148,7 +148,12 @@ all:	$(KBUILD_IMAGE) $(KBUILD_DTBS)
 MTK_PLATFORM := $(CONFIG_MTK_PLATFORM:"%"=%)
 MTK_PROJECT := $(CONFIG_ARCH_MTK_PROJECT:"%"=%)
 export MTK_PLATFORM MTK_PROJECT MTK_TARGET_PROJECT
--include $(srctree)/scripts/drvgen/drvgen.mk
+#-include $(srctree)/scripts/drvgen/drvgen.mk
+dtbo_check:
+	@echo "  SKIP    dtbo_check for cuttlefish"
+	@true
+
+.PHONY: dtbo_check
 
 boot := arch/arm64/boot
 
